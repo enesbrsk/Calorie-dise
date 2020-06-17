@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFB41E"
+        android:orientation="vertical">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+
+                app:cardElevation="10dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="389dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/rErkek"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Erkek">
+
+                        </RadioButton>
+
+                        <RadioButton
+                            android:id="@+id/rKadın"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:text="Kadın"></RadioButton>
+
+                    </RadioGroup>
+
+                    <LinearLayout
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+
+                        <EditText
+
+                            android:id="@+id/k_boy"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:inputType="number"
+                            android:text="Boy"></EditText>
+
+                        <EditText
+                            android:id="@+id/k_kilo"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="number"
+                            android:text="Kilo"></EditText>
+
+                        <EditText
+                            android:id="@+id/k_yas"
+                            android:layout_width="80dp"
+                            android:layout_height="40dp"
+                            android:layout_marginLeft="10dp"
+                            android:inputType="number"
+                            android:text="Yaş"></EditText>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+
+        <GridLayout
+
+            android:layout_marginRight="10dp"
+
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="403dp"
+                    android:layout_height="match_parent"
+
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+
+                    <RadioGroup
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        >
+
+                        <RadioButton
+                            android:id="@+id/rHareketsiz"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hareketsiz"></RadioButton>
+                        <RadioButton
+                            android:id="@+id/rBirazhareket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Biraz Hareketli"></RadioButton>
+                        <RadioButton
+                            android:id="@+id/rOrtahareket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Orta Derece Hareketli"></RadioButton>
+                        <RadioButton
+                            android:id="@+id/rOldukçaHareket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Oldukça Hareketli"></RadioButton>
+                        <RadioButton
+                            android:id="@+id/rSondereceHareket"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Son Derece Hareketli"></RadioButton>
+
+                    </RadioGroup>
+
+                    <Button
+                        android:id="@+id/k_hesapla"
+                        android:text="Hesapla"
+                        android:layout_marginTop="35dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_width="130dp"
+                        android:layout_height="80dp"></Button>
+
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginRight="10dp"
+
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:rowCount="3">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="843dp"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="-80dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/txt_bazal"
+                            android:text="Bazal Metabolizma Hızı"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:id="@+id/txt_sabit"
+                            android:text="Kiloyu Sabit Tutmak"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"></TextView>
+
+                        <TextView
+                            android:id="@+id/txt_kiloverme"
+                            android:text="Yavaş Kilo Vermek"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"></TextView>
+                        <TextView
+                            android:id="@+id/txt_kiloal"
+                            android:text="Kilo Almak"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"></TextView>
+
+                        <TextView
+                            android:id="@+id/txt_hızlıkilo"
+                            android:text="Hızlı Kilo Vermek"
+                            android:textSize="20dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"></TextView>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </GridLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+
